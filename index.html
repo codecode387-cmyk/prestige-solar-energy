@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Solar Energy and Electrical Limited | Port Harcourt</title>
+    <meta name="description" content="Prestige Solar Energy and Electrical Limited provides reliable solar energy and electrical solutions in Port Harcourt. Explore solar panels, inverters, batteries, and professional services.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Prestige Solar Energy and Electrical Limited">
+    <meta property="og:description" content="Reliable Solar Energy and Electrical Solutions in Port Harcourt, Rivers State.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* Brand Colors */
+            --navy: #0B1F3A;
+            --solar-blue: #1769AA;
+            --energy-gold: #F5B82E;
+            --white: #FFFFFF;
+            --light-grey: #F4F7FA;
+            --charcoal: #252B33;
+            --text-muted: #5A6B7C;
+            
+            /* System */
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+            --shadow: 0 10px 30px rgba(11, 31, 58, 0.08);
+            --shadow-hover: 0 20px 40px rgba(11, 31, 58, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--charcoal);
+            background-color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* Typography */
+        h1, h2, h3, h4 { color: var(--navy); font-weight: 800; line-height: 1.2; }
+        .section-title { font-size: 2.5rem; margin-bottom: 1rem; text-align: center; }
+        .section-subtitle { text-align: center; color: var(--text-muted); max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem; }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .btn-gold { background-color: var(--energy-gold); color: var(--navy); }
+        .btn-gold:hover { background-color: #e0a625; transform: translateY(-2px); }
+
+        .btn-blue { background-color: var(--solar-blue); color: var(--white); }
+        .btn-blue:hover { background-color: #125688; transform: translateY(-2px); }
+
+        .btn-outline { background-color: transparent; border: 2px solid var(--navy); color: var(--navy); }
+        .btn-outline:hover { background-color: var(--navy); color: var(--white); }
+
+        .btn-wa { background-color: #25D366; color: white; }
+        .btn-wa:hover { background-color: #1ebe5d; transform: translateY(-2px); }
+
+        /* Navbar */
+        header {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-text i { color: var(--energy-gold); font-size: 1.6rem; }
+        .logo-text span { display: block; font-size: 0.75rem; font-weight: 400; color: #9CA3AF; letter-spacing: 1px; text-transform: uppercase;}
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .nav-links a:hover { color: var(--energy-gold); }
+        .nav-links .nav-cta { color: var(--navy); }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(11, 31, 58, 0.7), rgba(11, 31, 58, 0.85)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 8rem 5%;
+            text-align: center;
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 { font-size: 3.8rem; color: var(--white); margin-bottom: 1.5rem; max-width: 900px; }
+        .hero p { font-size: 1.2rem; max-width: 750px; margin-bottom: 2.5rem; color: #d1d5db; }
+        
+        .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
+        
+        .trust-statement {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--energy-gold);
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+        /* Layout Containers */
+        .container { padding: 6rem 5%; max-width: 1400px; margin: 0 auto; }
+        .bg-light { background-color: var(--light-grey); }
+
+        /* Products Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+
+        .product-img {
+            height: 220px;
+            width: 100%;
+            overflow: hidden;
+            background-color: #eaeaea;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .product-card:hover .product-img img { transform: scale(1.05); }
+
+        .product-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-content h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+        .product-content p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1; }
+        
+        .product-actions { display: flex; flex-direction: column; gap: 0.8rem; }
+        .product-actions .btn { width: 100%; padding: 0.7rem; font-size: 0.9rem; }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            border-top: 4px solid var(--energy-gold);
+        }
+        .service-img { height: 200px; width: 100%; object-fit: cover; }
+        .service-content { padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;}
+        .service-content h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+        .service-content p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;}
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--solar-blue);
+            margin-bottom: 1.5rem;
+        }
+        .feature-card h4 { margin-bottom: 1rem; font-size: 1.1rem; }
+        .feature-card p { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* Reviews Section */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .stars { color: var(--energy-gold); margin-bottom: 1rem; font-size: 1.1rem; }
+        .review-text { font-style: italic; margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.7; }
+        .review-author { font-weight: 800; color: var(--navy); }
+        .review-date { font-size: 0.8rem; color: var(--text-muted); margin-top: 5px; display: block;}
+        
+        .owner-response {
+            background: var(--light-grey);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--solar-blue);
+        }
+
+        /* How It Works */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--solar-blue);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 0 auto 1.5rem auto;
+            box-shadow: 0 4px 10px rgba(23, 105, 170, 0.3);
+        }
+        .step h4 { margin-bottom: 1rem; font-size: 1.2rem; }
+        .step p { font-size: 0.95rem; color: var(--text-muted); }
+
+        /* Split Sections (Home/Commercial) */
+        .split-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .split-section:nth-child(even) .split-image { order: 2; }
+        .split-image img { border-radius: var(--border-radius); box-shadow: var(--shadow); width: 100%; height: 400px; object-fit: cover;}
+        .split-content h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        .split-content p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; }
+
+        /* Contact & Form */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .contact-info h3 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+        .contact-info p { margin-bottom: 1.2rem; display: flex; align-items: flex-start; gap: 15px; font-size: 1.05rem; }
+        .contact-info i { color: var(--energy-gold); font-size: 1.3rem; margin-top: 4px; width: 20px;}
+        
+        .enquiry-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.95rem; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--solar-blue);
+            box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.1);
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .form-status { margin-top: 1.5rem; padding: 1rem; border-radius: 8px; font-weight: 600; font-size: 0.95rem; display: none;}
+        .form-status.error { display: block; background: #FEE2E2; color: #991B1B; }
+        .form-status.success { display: block; background: #D1FAE5; color: #065F46; }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: #9CA3AF;
+            padding: 4rem 5% 2rem 5%;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer-col h4 { color: var(--white); margin-bottom: 1.5rem; font-size: 1.1rem; }
+        .footer-col ul li { margin-bottom: 0.8rem; }
+        .footer-col ul li a { transition: var(--transition); font-size: 0.95rem;}
+        .footer-col ul li a:hover { color: var(--energy-gold); }
+        
+        .footer-logo { color: var(--white); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;}
+        .footer-logo i { color: var(--energy-gold); }
+        
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Floating WhatsApp */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        .floating-wa:hover { transform: scale(1.1); color: white; }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 2.8rem; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .split-section { grid-template-columns: 1fr; gap: 2rem; }
+            .split-section:nth-child(even) .split-image { order: 0; }
+            .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .steps-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .step::after { display: none; }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger { display: block; }
+            
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--navy);
+                flex-direction: column;
+                padding: 1rem 0;
+                gap: 0;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+                display: none;
+            }
+            .nav-links.active { display: flex; }
+            .nav-links a { padding: 1rem 5%; width: 100%; display: block; border-bottom: 1px solid rgba(255,255,255,0.05); }
+            .nav-links .nav-cta { margin: 1rem 5%; width: 90%; border-bottom: none; text-align: center;}
+
+            .hero { padding: 6rem 5%; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .hero-buttons { flex-direction: column; width: 100%; max-width: 300px; }
+            
+            .section-title { font-size: 2rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .enquiry-form { padding: 2rem 1.5rem; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-logo { justify-content: center; }
+            .floating-wa { width: 55px; height: 55px; font-size: 1.8rem; bottom: 20px; right: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-text">
+            <i class="fa-solid fa-sun"></i>
+            <div>
+                Prestige Solar
+                <span>Energy & Electrical Ltd</span>
+            </div>
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#products">Solar Products</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="btn btn-gold nav-cta" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Request a Quote</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Reliable Solar Energy and Electrical Solutions</h1>
+        <p>Power your home or business with dependable solar energy and electrical solutions. Explore solar products, discover installation options, and contact Prestige Solar Energy and Electrical Limited for your energy needs.</p>
+        
+        <div class="hero-buttons">
+            <a href="#products" class="btn btn-blue">Explore Solar Products</a>
+            <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar%20Energy%20and%20Electrical%20Limited.%20I%20would%20like%20to%20request%20a%20quote%20for%20my%20energy%20needs." target="_blank" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Request a Quote</a>
+            <a href="#services" class="btn btn-outline" style="border-color: white; color: white;">Our Services</a>
+        </div>
+        
+        <div class="trust-statement">Solar Energy • Electrical Solutions • Professional Service</div>
+    </section>
+
+    <!-- Solar Products Showcase -->
+    <section class="container" id="products">
+        <h2 class="section-title">Explore Our Solar Products and Equipment</h2>
+        <p class="section-subtitle">Discover solar energy equipment and power solutions for residential, commercial, and other suitable applications. Contact our team to discuss the right equipment for your needs.</p>
+        
+        <div class="product-grid">
+            <!-- Solar Panels -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Photovoltaic Solar Panels" loading="lazy">
+                </div>
+                <div class="product-content">
+                    <h3>Solar Panels</h3>
+                    <p>High-efficiency photovoltaic panels designed to capture sunlight and convert it into clean, renewable electricity for your property.</p>
+                    <div class="product-actions">
+                        <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20your%20Solar%20Panels.%20Please%20share%20the%20available%20options." target="_blank" class="btn btn-blue">Enquire About Panels</a>
+                        <a href="https://wa.me/2347069437651" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solar Inverters -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Solar Inverter System" loading="lazy">
+                </div>
+                <div class="product-content">
+                    <h3>Solar Inverters</h3>
+                    <p>Explore inverter solutions for converting solar or battery power into usable electricity. Contact us to discuss the capacity and setup suitable for your application.</p>
+                    <div class="product-actions">
+                        <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20your%20Solar%20Inverters.%20Please%20share%20the%20available%20options." target="_blank" class="btn btn-blue">Enquire About Inverters</a>
+                        <a href="https://wa.me/2347069437651" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solar Batteries -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Solar Battery Storage" loading="lazy">
+                </div>
+                <div class="product-content">
+                    <h3>Solar Batteries</h3>
+                    <p>Store excess energy generated during the day for use at night or during power outages. Discuss suitable battery options for your system.</p>
+                    <div class="product-actions">
+                        <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20your%20Solar%20Batteries.%20Please%20share%20the%20available%20options." target="_blank" class="btn btn-blue">Enquire About Batteries</a>
+                        <a href="https://wa.me/2347069437651" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Energy Storage Systems -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Battery Energy Storage System" loading="lazy">
+                </div>
+                <div class="product-content">
+                    <h3>Battery Energy Storage Systems</h3>
+                    <p>Modern energy storage units designed for home or commercial storage installations, ensuring reliable power availability.</p>
+                    <div class="product-actions">
+                        <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20Battery%20Energy%20Storage%20Systems." target="_blank" class="btn btn-blue">Enquire About Storage</a>
+                        <a href="https://wa.me/2347069437651" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charge Controllers -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Solar Charge Controller" loading="lazy">
+                </div>
+                <div class="product-content">
+                    <h3>Charge Controllers</h3>
+                    <p>Essential components that regulate the voltage and current coming from the solar panels going to the battery.</p>
+                    <div class="product-actions">
+                        <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20Charge%20Controllers." target="_blank" class="btn btn-blue">Enquire About Controllers</a>
+                        <a href="https://wa.me/2347069437651" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solar Accessories -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1548613053-2206a5e5b0f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Solar Accessories and Mounting" loading="lazy">
+                </div>
+                <div class="product-content">
+                    <h3>Solar Accessories</h3>
+                    <p>Relevant accessories including mounting structures, cables, connectors, and protection equipment to complete your installation.</p>
+                    <div class="product-actions">
+                        <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20Solar%20Accessories." target="_blank" class="btn btn-blue">Enquire About Accessories</a>
+                        <a href="https://wa.me/2347069437651" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container bg-light" id="services">
+        <h2 class="section-title">Solar and Electrical Services</h2>
+        <p class="section-subtitle">Professional solutions tailored to your energy requirements.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Solar Energy Solutions" class="service-img" loading="lazy">
+                <div class="service-content">
+                    <h3>Solar Energy Solutions</h3>
+                    <p>We help you select solar energy systems for homes and businesses based on your specific power requirements and energy goals.</p>
+                    <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20discuss%20Solar%20Energy%20Solutions." target="_blank" class="btn btn-blue">Discuss This Service</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Solar System Installation" class="service-img" loading="lazy">
+                <div class="service-content">
+                    <h3>Solar System Installation</h3>
+                    <p>Professional installation and system setup to ensure your solar equipment operates efficiently and safely.</p>
+                    <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20discuss%20Solar%20System%20Installation." target="_blank" class="btn btn-blue">Discuss This Service</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Inverter and Battery Solutions" class="service-img" loading="lazy">
+                <div class="service-content">
+                    <h3>Inverter and Battery Solutions</h3>
+                    <p>Explore how inverter and battery systems can support your power requirements, providing reliable backup and energy management.</p>
+                    <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20discuss%20Inverter%20and%20Battery%20Solutions." target="_blank" class="btn btn-blue">Discuss This Service</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Electrical Services" class="service-img" loading="lazy">
+                <div class="service-content">
+                    <h3>Electrical Services</h3>
+                    <p>Relevant electrical solutions to support your solar installation and general electrical needs for your property.</p>
+                    <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20discuss%20Electrical%20Services." target="_blank" class="btn btn-blue">Discuss This Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container">
+        <h2 class="section-title">Why Choose Prestige Solar Energy and Electrical Limited?</h2>
+        <p class="section-subtitle">Your trusted partner for solar energy and electrical solutions in Port Harcourt.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-user-gear feature-icon"></i>
+                <h4>Customer-Focused Solutions</h4>
+                <p>We discuss options based on your specific energy requirements and needs.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-solar-panel feature-icon"></i>
+                <h4>Solar Product Options</h4>
+                <p>Explore relevant equipment categories for different residential and commercial applications.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-house-chimney feature-icon"></i>
+                <h4>Residential & Commercial</h4>
+                <p>Present solutions suitable for homes and businesses where applicable.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-comments feature-icon"></i>
+                <h4>Practical Guidance</h4>
+                <p>We give customers a clear way to enquire about products and services.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-brands fa-whatsapp feature-icon"></i>
+                <h4>Convenient Communication</h4>
+                <p>Make it easy to contact the company directly via phone or WhatsApp.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-location-dot feature-icon"></i>
+                <h4>Local Presence</h4>
+                <p>Conveniently located in Rukpokwu, Port Harcourt, to serve you better.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="container bg-light" id="reviews">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Rated 5.0 out of 5 based on 15 reviews on our Google Business Profile.</p>
+        
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Prestige solar energy and electrical they are well good working and trust.also good on any kind of electrical mentance , they work fast and keep to time, and anything comes up thay answer u immediately."</p>
+                <p class="review-author">Joshua Ogundiran</p>
+                <span class="review-date">3 months ago</span>
+                <div class="owner-response">
+                    <strong>Owner Response:</strong> "U are welcome"
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"I sincerely appreciate Prestige Solar Energy and Electrical Company for the excellent services they provide. Since I started using their services, I have stopped using other electrical companies because I have found them to be reliable, …"</p>
+                <p class="review-author">Taye Omolako</p>
+                <span class="review-date">2 months ago</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">A simple, transparent process to get the energy solutions you need.</p>
+        
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Tell Us What You Need</h4>
+                <p>Describe your power requirements, property type, or product interests.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Discuss Suitable Options</h4>
+                <p>Contact the company to discuss available equipment and possible solutions.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Move Forward</h4>
+                <p>Continue the discussion with the company and confirm the relevant products or services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Sections: Home & Commercial -->
+    <section class="container bg-light">
+        <div class="split-section">
+            <div class="split-content">
+                <h2>Residential Solar Solutions</h2>
+                <p>Explore solar energy options for your home. Contact Prestige Solar Energy and Electrical Limited to discuss your power requirements and suitable equipment.</p>
+                <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20Home%20Solar%20Solutions." target="_blank" class="btn btn-blue">Enquire About Home Solar</a>
+            </div>
+            <div class="split-image">
+                <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Residential Solar Installation" loading="lazy">
+            </div>
+        </div>
+
+        <div class="split-section" style="margin-top: 6rem;">
+            <div class="split-image">
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Commercial Solar Installation" loading="lazy">
+            </div>
+            <div class="split-content">
+                <h2>Commercial Solar Solutions</h2>
+                <p>Discuss solar energy and power solutions for your business. Share your requirements so the team can help you explore appropriate options.</p>
+                <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20enquire%20about%20Business%20Solar%20Solutions." target="_blank" class="btn btn-blue">Enquire About Business Solar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section class="container" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Reach out to us for product information, quotations, or general enquiries.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Prestige Solar Energy and Electrical Limited</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 153, Rupokwu, Eneka Road, opposite Greater Achiever Ministry, Rukpokwu, Port Harcourt 500102, Rivers State, Nigeria.</p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+2347069437651" style="font-weight: 700; color: var(--navy);">0706 943 7651</a></p>
+                <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/2347069437651" target="_blank" style="font-weight: 700; color: var(--navy);">0706 943 7651</a></p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Google Maps Plus Code: V2HH+7R Port Harcourt</p>
+                
+                <br>
+                <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar%20Energy%20and%20Electrical%20Limited.%20I%20would%20like%20to%20enquire%20about%20your%20solar%20energy%20and%20electrical%20services.%20Please%20assist%20me%20with%20the%20available%20options." target="_blank" class="btn btn-wa" style="margin-top: 1rem;"><i class="fa-brands fa-whatsapp"></i> Message Us on WhatsApp</a>
+                
+                <br><br>
+                <a href="https://www.google.com/maps/place/V2HH%2B7R+Port+Harcourt" target="_blank" class="btn btn-outline"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+            </div>
+
+            <!-- Enquiry Form -->
+            <div class="enquiry-form">
+                <h3 style="margin-bottom: 1.5rem;">Request a Quote</h3>
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="0706 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address (Optional)</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="customerType">Customer Type *</label>
+                            <select id="customerType" name="customerType" required>
+                                <option value="">Select type</option>
+                                <option value="Home">Home</option>
+                                <option value="Business">Business</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Product/Service of Interest *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select option</option>
+                                <option value="Solar Panels">Solar Panels</option>
+                                <option value="Inverters">Inverters</option>
+                                <option value="Batteries">Batteries</option>
+                                <option value="Charge Controllers">Charge Controllers</option>
+                                <option value="Complete Solar System">Complete Solar System</option>
+                                <option value="Installation">Installation</option>
+                                <option value="Electrical Services">Electrical Services</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message / Power Requirements *</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="E.g., I want to power a 3-bedroom apartment..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold" style="width: 100%;">Submit Enquiry</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="container bg-light" id="about">
+        <div class="split-section">
+            <div class="split-content">
+                <h2>About Prestige Solar</h2>
+                <p>Prestige Solar Energy and Electrical Limited provides a point of contact for customers exploring solar energy products and electrical solutions. We help customers discuss their requirements, enquire about equipment, and explore options for their homes and businesses.</p>
+                <p>Based in Rukpokwu, Port Harcourt, we are committed to providing clear information and practical guidance to help you make informed decisions about your energy needs.</p>
+                <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar.%20I%20would%20like%20to%20learn%20more%20about%20your%20company." target="_blank" class="btn btn-blue">Chat With Us</a>
+            </div>
+            <div class="split-image">
+                <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Prestige Solar Team" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-sun"></i> Prestige Solar
+                </div>
+                <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Reliable Solar Energy and Electrical Solutions in Port Harcourt, Rivers State.</p>
+                <p style="font-size: 0.95rem;"><i class="fa-solid fa-location-dot" style="color: var(--energy-gold); margin-right: 10px;"></i> 153, Rupokwu, Eneka Road, Port Harcourt.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#products">Solar Panels</a></li>
+                    <li><a href="#products">Inverters</a></li>
+                    <li><a href="#products">Batteries</a></li>
+                    <li><a href="#products">Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="tel:+2347069437651"><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--energy-gold);"></i> 0706 943 7651</a></li>
+                    <li><a href="https://wa.me/2347069437651" target="_blank"><i class="fa-brands fa-whatsapp" style="margin-right: 10px; color: var(--energy-gold);"></i> WhatsApp Enquiry</a></li>
+                    <li><a href="https://www.google.com/maps/place/V2HH%2B7R+Port+Harcourt" target="_blank"><i class="fa-solid fa-map-location-dot" style="margin-right: 10px; color: var(--energy-gold);"></i> Get Directions</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2024 Prestige Solar Energy and Electrical Limited. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2347069437651?text=Hello%20Prestige%20Solar%20Energy%20and%20Electrical%20Limited.%20I%20would%20like%20to%20enquire%20about%20your%20solar%20energy%20and%20electrical%20services.%20Please%20assist%20me%20with%20the%20available%20options." target="_blank" class="floating-wa" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Form Handling (WhatsApp Fallback Integration)
+        const form = document.getElementById('enquiryForm');
+        const statusDiv = document.getElementById('formStatus');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const customerType = document.getElementById('customerType').value;
+            const interest = document.getElementById('interest').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if(!name || !phone || !customerType || !interest || !message) {
+                statusDiv.textContent = "Please fill in all required fields marked with *.";
+                statusDiv.className = "form-status error";
+                return;
+            }
+
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
+            submitBtn.disabled = true;
+
+            // Since there is no backend API configured, we safely route this to WhatsApp
+            // to ensure the enquiry is not lost.
+            setTimeout(() => {
+                const waNumber = "2347069437651";
+                const waText = `*New Quote Request*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${email || 'N/A'}%0A*Customer Type:* ${customerType}%0A*Interest:* ${interest}%0A*Message:* ${message}`;
+                
+                // Show success state with direct link to send the message
+                statusDiv.innerHTML = `Thank you, ${name}. Your enquiry is ready. <br><br> <a href="https://wa.me/${waNumber}?text=${waText}" target="_blank" class="btn btn-wa" style="margin-top: 10px; font-size: 0.9rem; padding: 0.7rem 1rem;"><i class="fa-brands fa-whatsapp"></i> Click here to send via WhatsApp</a>`;
+                statusDiv.className = "form-status success";
+                
+                // Reset button state
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                
+                // Reset form fields
+                form.reset();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
